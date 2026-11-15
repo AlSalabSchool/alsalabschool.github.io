@@ -357,6 +357,36 @@ body {
   color: rgba(255,255,255,0.8);
 }
 
+.cover-credits {
+  margin-top: 18px;
+  text-align: center;
+  color: var(--moe-deep);
+  max-width: 36rem;
+  padding: 10px 12px 2px;
+}
+.cover-credits p {
+  font-size: clamp(0.88rem, 2vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.65;
+}
+.cover-credits p:first-child {
+  font-weight: 700;
+  color: var(--gold-deep);
+}
+
+.end-credits {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.end-credits p:first-child {
+  font-weight: 700;
+  color: var(--gold-deep);
+}
+
 /* —— Hadith —— */
 .hadith-box {
   background: var(--panel);
@@ -970,6 +1000,9 @@ body {
   .points { gap: 7px; }
   .stage { padding: 10px 28px 16px; }
   .sec-kicker { margin-bottom: 10px; }
+  .cover-credits { margin-top: 10px; padding-top: 4px; }
+  .cover-credits p { font-size: 0.88rem; line-height: 1.5; }
+  .end-credits { margin-top: 10px; font-size: 0.85rem; }
 }
 
 @media (max-width: 420px) {
@@ -1024,6 +1057,11 @@ body {
             </div>
             <button type="button" class="cover-start" id="startBtn">ابدأ الدرس</button>
             <p class="cover-note">مرّر أو استخدم «التالي» للانتقال بين الخطوات</p>
+          </div>
+          <div class="cover-credits">
+            <p>المادة: إسلاميات</p>
+            <p>إعداد الطلاب: زيد الجهني، حسن علوان، أسامة دحباش</p>
+            <p>إشراف الأستاذ: مهند عياشي</p>
           </div>
         </div>
       </section>
@@ -1196,6 +1234,11 @@ body {
           <p>متى يكون ترك الانتصار للنفس سماحة ورفعة؟ ومتى يكون ذلة ومهانة؟</p>
         </section>
         
+        <div class="end-credits">
+          <p>المادة: إسلاميات</p>
+          <p>إعداد الطلاب: زيد الجهني، حسن علوان، أسامة دحباش</p>
+          <p>إشراف الأستاذ: مهند عياشي</p>
+        </div>
         <p class="footer-school">مدارس جازان الأهلية</p>
       </section>
     </main>
